@@ -1,0 +1,149 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+a:hover {
+  color: #005bb5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button, input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Flexbox utilities */
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* Chatbox Design */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.message-bubble {
+  padding: 15px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 75%;
+}
+
+.message-bubble.user {
+  background-color: #005bb5;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 500px;
+  padding: 10px;
+}
+
+.message-sent {
+  align-self: flex-end;
+}
+
+.message-received {
+  align-self: flex-start;
+}
+
+/* Chat Input Section */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #0070f3;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .message-bubble {
+  background-color: #444;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode input {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
